@@ -5,13 +5,16 @@ import HotelOutlinedIcon from "@material-ui/icons/HotelOutlined";
 import BathtubOutlinedIcon from "@material-ui/icons/BathtubOutlined";
 import DirectionsCarOutlinedIcon from "@material-ui/icons/DirectionsCarOutlined";
 // import ContactPhoneOutlinedIcon from '@material-ui/icons/ContactPhoneOutlined';
-import testImg from "../img/testh.jpg";
+import testImg from "../Cards/img/testh.jpg";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 
 function HomeCard() {
   return (
     <div className="HomeCardMain">
-      <img src={testImg} alt="" className="CardBigImg" />
+      <Link to="/landing">
+        <img src={testImg} alt="" className="CardBigImg" />
+      </Link>
       <div className="OtherContDiv">
         <div className="SubOthercont">
           <div className="CardLocationDiv">
@@ -59,7 +62,7 @@ function HomeCard() {
                 color: "#fff",
               }}
             >
-              View Package
+              <Link to="/landing">View Package</Link>
             </Button>
           </div>
         </div>
